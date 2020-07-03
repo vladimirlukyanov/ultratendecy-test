@@ -1,0 +1,18 @@
+/* Account */
+
+.account {
+
+  .contents {
+    .white-bg {
+      background: #fff;
+    }
+  }
+
+  .footer .social {
+
+    @media (min-width: 1200px) {
+      left: 56px;
+    }
+  }
+
+}

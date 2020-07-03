@@ -1,0 +1,66 @@
+@import "~bootstrap/scss/_functions.scss";
+@import "~bootstrap/scss/_variables.scss";
+@import "~bootstrap/scss/mixins/_breakpoints.scss";
+
+
+.comments {
+  .top {
+    background: #6648cd;
+    padding: 45px 0 35px 0;
+
+    .total {
+      color: #FFFFFF;
+      font-family: "Eina 03", sans-serif;
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: 0;
+      line-height: 33px;
+      margin: 0 0 30px 0;
+      display: block;
+      text-transform: uppercase;
+      text-align: center;
+
+      @include media-breakpoint-up(md) {
+        margin: 0;
+        text-align: left;
+      }
+    }
+
+    .sorting-options {
+      text-align: center;
+
+      @include media-breakpoint-up(md) {
+        text-align: left;
+      }
+
+      .list-inline .list-inline-item .link {
+        color: #FFFFFF;
+        font-family: "Eina 03", sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: 0;
+        line-height: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 20px 17px;
+        opacity: .5;
+
+        cursor: pointer;
+
+        &.active {
+          opacity: 1;
+        }
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .bottom {
+    padding: 60px 0 40px 0;
+    background: #eeeef2;
+
+  }
+}
